@@ -136,7 +136,7 @@ else:
         if st.button("Submit Answer", key=f"submit_{st.session_state.current_question_index}"):
             if selected_option:
                 submit_answer(selected_option)
-                st.experimental_rerun() # Rerun to show next question or results
+                st.rerun() # Rerun to show next question or results
             else:
                 st.warning("Please select an option before submitting.")
 
